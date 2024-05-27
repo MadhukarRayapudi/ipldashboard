@@ -38,6 +38,10 @@
     text-decoration: none;
     background-color: transparent;
   }
+
+  .list-item {
+    list-style-type: none;
+  }
 }
 
 @media (min-width: 769px) {
@@ -80,5 +84,9 @@
 
   .link-tag {
     text-decoration: none;
+  }
+
+  .list-item {
+    list-style-type: none;
   }
 }

@@ -31,7 +31,7 @@ const LatestMatch = props => {
         <div>
           <p className="details"> First Innings </p>
           <p className="details-ans"> {firstInnings} </p>
-          <p className="details"> second Innings </p>
+          <p className="details">Second Innings </p>
           <p className="details-ans"> {secondInnings} </p>
           <p className="details"> Man Of The Match </p>
           <p className="details-ans"> {manOfTheMatch} </p>
@@ -49,11 +49,11 @@ const LatestMatch = props => {
         <div>
           <p className="details"> First Innings </p>
           <p className="details-ans"> {firstInnings} </p>
-          <p className="details"> second Innings </p>
+          <p className="details"> Second Innings </p>
           <p className="details-ans"> {secondInnings} </p>
           <p className="details"> Man Of The Match </p>
           <p className="details-ans"> {manOfTheMatch} </p>
-          <p className="details"> Umpires </p>
+          <p className="details"> umpires </p>
           <p className="details-ans"> {umpires} </p>
         </div>
       </div>

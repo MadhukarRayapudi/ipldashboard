@@ -29,7 +29,7 @@ class TeamMatches extends Component {
       manOfTheMatch: data.latest_match_details.man_of_the_match,
       matchStatus: data.latest_match_details.match_status,
       result: data.latest_match_details.result,
-      secondInnings: data.latest_match_details.second_innings,
+      second_innings: data.latest_match_details.second_innings,
       umpires: data.latest_match_details.umpires,
       venue: data.latest_match_details.venue,
       firstInnings: data.latest_match_details.first_innings,
@@ -54,7 +54,7 @@ class TeamMatches extends Component {
     const {latestMatch, recentMatches, isLoading} = this.state
     const {teamBannerUrl} = latestMatch
     return (
-      <ul className="team-matches-container">
+      <div className="team-matches-container">
         {isLoading && (
           <div data-testid="loader">
             <Loader
@@ -68,17 +68,21 @@ class TeamMatches extends Component {
         )}
         {!isLoading && (
           <>
-            <img src={teamBannerUrl} alt="" className="team-banner" />
+            <img
+              src={teamBannerUrl}
+              alt="team banner"
+              className="team-banner"
+            />
             <p className="latest-matches-heading"> Latest Matches </p>
             <LatestMatch latestMatch={latestMatch} key={latestMatch.id} />
-            <div className="recent-matches-container">
+            <ul className="recent-matches-container">
               {recentMatches.map(eachMatch => (
                 <MatchCard eachMatch={eachMatch} key={eachMatch.id} />
               ))}
-            </div>
+            </ul>
           </>
         )}
-      </ul>
+      </div>
     )
   }
 }
