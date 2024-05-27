@@ -1,0 +1,127 @@
+/* Write your CSS here */
+@media (max-width: 768px) {
+  .team-matches-container {
+    background-image: linear-gradient(#d91c1f, #a4261d, #1e293b);
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-banner {
+    width: 100%;
+  }
+
+  .latest-matches-heading {
+    font-family: bree serif;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .latest-match-container {
+    background-color: #0f172a;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest-match-opp-team-name {
+    font-family: bree serif;
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .details {
+    font-family: bree serif;
+    color: #ffffff;
+  }
+
+  .details-ans {
+    color: #ffffff;
+    font-family: bree serif;
+    font-size: 12px;
+  }
+
+  .latest-match-logo-and-details-sm-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .competing-team-logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  .latest-match-logo-and-details-lg-container {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .team-matches-container {
+    background-image: linear-gradient(#d91c1f, #a4261d, #1e293b);
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-banner {
+    width: 100%;
+  }
+
+  .latest-matches-heading {
+    font-family: bree serif;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .latest-match-container {
+    background-color: #0f172a;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .latest-match-opp-team-name {
+    font-family: bree serif;
+    font-size: 28px;
+    color: #ffffff;
+  }
+
+  .details {
+    font-family: bree serif;
+    font-size: 28px;
+    color: #ffffff;
+  }
+
+  .details-ans {
+    font-family: bree serif;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  .latest-match-logo-and-details-sm-container {
+    display: none;
+  }
+
+  .latest-match-logo-and-details-lg-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .competing-team-logo {
+    height: 240px;
+    width: 240px;
+    margin-left: 50px;
+  }
+}
