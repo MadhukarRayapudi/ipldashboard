@@ -1,74 +1,73 @@
-/* Write your CSS here */
-body {
-  margin: 0px;
+.home-route-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-  .app-home-container {
-    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-  }
-
-  .app-logo-name-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .ipl-logo {
-    height: 60px;
-    width: 40px;
-    margin-right: 12px;
-  }
-
-  .ipl-heading {
-    font-family: Bree Serif;
-    font-size: 36px;
-    color: #ffffff;
-  }
-
-  .teams-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 769px) {
-  .app-home-container {
+@media screen and (min-width: 768px) {
+  .home-route-container {
     background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
   }
+}
 
-  .app-logo-name-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
+.teams-list-container {
+  width: 90%;
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .teams-list-container {
+    width: 90%;
+    max-width: 1110px;
   }
+}
 
+.ipl-dashboard-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ipl-logo {
+  width: 25px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
   .ipl-logo {
-    height: 80px;
     width: 60px;
-    margin-right: 12px;
+    height: 96px;
   }
+}
 
-  .ipl-heading {
-    font-family: Bree Serif;
-    font-size: 56px;
-    color: #ffffff;
-  }
+.ipl-dashboard-heading {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 36px;
+  margin-left: 12px;
+}
 
-  .teams-container {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .ipl-dashboard-heading {
+    font-size: 72px;
+    margin-left: 16px;
   }
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.teams-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
 }

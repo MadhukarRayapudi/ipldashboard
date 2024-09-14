@@ -1,92 +1,67 @@
-/* Write your CSS here */
-@media (max-width: 768px) {
-  .each-team-container {
-    background-color: #ffffff33;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 8px;
-    margin: 12px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-decoration: none;
-  }
+.team-item {
+  list-style-type: none;
+  width: 50%;
+}
 
-  .ipl-logo-name-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.link {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff33;
+  height: 85%;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  padding-left: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 7px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
 
-  .team-logo {
-    height: 190px;
-  }
-
-  .team-name-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .team-name {
-    font-family: bree serif;
-    font-size: 30px;
-    color: #ffffff;
-  }
-
-  .link-tag {
-    text-decoration: none;
-    background-color: transparent;
-  }
-
-  .list-item {
-    list-style-type: none;
+@media screen and (min-width: 768px) {
+  .link {
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 769px) {
-  .each-team-container {
-    background-color: #ffffff33;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 12px;
-    margin: 12px;
-    display: flex;
-    width: 40%;
-    align-items: center;
-    text-decoration: none;
-  }
+.team-logo {
+  width: 45px;
+  height: 45px;
+}
 
-  .ipl-logo-name-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
+@media screen and (min-width: 768px) {
   .team-logo {
-    height: 160px;
-    width: 130px;
-    margin-right: 18px;
+    width: 80px;
+    height: 80px;
   }
+}
 
-  .team-name-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+@media screen and (min-width: 992px) {
+  .team-logo {
+    width: 150px;
+    height: 150px;
   }
+}
 
+.team-name {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
   .team-name {
-    font-family: bree serif;
-    font-size: 30px;
-    color: #ffffff;
-  }
-
-  .link-tag {
-    text-decoration: none;
-  }
-
-  .list-item {
-    list-style-type: none;
+    font-size: 32px;
+    margin-left: 16px;
   }
 }
